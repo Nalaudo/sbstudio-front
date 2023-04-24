@@ -1,0 +1,199 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.login::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #ff4136, #ff403686);
+  background-size: cover;
+  opacity: 0.75;
+}
+
+.screen {
+  position: relative;
+  background: linear-gradient(90deg, #ff4136, #ff403686);
+  height: 600px;
+  width: 360px;
+  box-shadow: 0 0 24px #ff4136;
+}
+
+.screen * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya-regular';
+}
+
+.screenContent {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+}
+
+.screenBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+}
+
+.screenBackgroundShape {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.screenBackgroundShape1 {
+  height: 520px;
+  width: 520px;
+  background: #fff;
+  top: -50px;
+  right: 120px;
+  border-radius: 0 72px 0 0;
+}
+
+.screenBackgroundShape2 {
+  height: 220px;
+  width: 220px;
+  background: #ff0000;
+  top: -172px;
+  right: 0;
+  border-radius: 32px;
+}
+
+.screenBackgroundShape3 {
+  height: 540px;
+  width: 190px;
+  background: linear-gradient(270deg, #ff0000, #ff00003b);
+  top: -24px;
+  right: 0;
+  border-radius: 32px;
+}
+
+.screenBackgroundShape4 {
+  height: 400px;
+  width: 200px;
+  background: #ff0000b9;
+  top: 420px;
+  right: 50px;
+  border-radius: 60px;
+}
+
+.loginForm {
+  width: 320px;
+  padding: 30px;
+  padding-top: 156px;
+}
+
+.loginField {
+  display: inline-flex;
+  padding: 20px 0;
+  position: relative;
+}
+
+.authFormIcon {
+  position: absolute;
+  top: 30px;
+  color: #ff0000b7;
+}
+
+.authFormInput {
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-bottom: 2px solid #d1d1d4;
+  background: none;
+  padding: 10px 10px 10px 24px;
+  font-weight: 700;
+  width: 75%;
+  transition: 0.2s;
+}
+
+.authFormInput:active,
+.authFormInput:focus,
+.authFormInput:hover {
+  outline: none;
+  border-bottom-color: #ff403686;
+}
+
+.passwordEye {
+  position: absolute;
+  left: 140px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.loginSubmit {
+  background: #fff;
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 16px 20px;
+  border-radius: 26px;
+  border: 1px solid #d4d3e8;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #ff4136;
+  box-shadow: 0 2px 2px #ff403686;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.loginSubmit:active,
+.loginSubmit:focus,
+.loginSubmit:hover {
+  border-color: #ff4136;
+  outline: none;
+}
+
+.buttonIcon {
+  font-size: 24px;
+  margin-left: auto;
+  color: #ff403686;
+}
+
+.socialLogin {
+  position: absolute;
+  height: 140px;
+  width: 160px;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLoginIcon {
+  padding: 20px 10px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 8px #7875b5;
+  transition: all 0.3s;
+}
+
+.socialLoginIcon:hover {
+  transform: scale(1.5);
+}

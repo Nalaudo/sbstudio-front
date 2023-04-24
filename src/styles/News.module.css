@@ -1,0 +1,22 @@
+.news {
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200vh;
+}
+
+.news::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/backgroundImages/homeBackground.jpg');
+  background-size: cover;
+  opacity: 0.5;
+}
